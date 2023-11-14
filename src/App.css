@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800;900&display=swap");
+
+:root {
+  --bs-body-font-family: "Montserrat", sans-serif !important;
+}
+
+.product {
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.product-image {
+  height: 200px;
+  width: 100%;
+  object-fit: scale-down;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.link:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.carousel img {
+  height: 370px;
+  object-fit: cover;
+}
+
+.my-cart-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.similar-products {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* touch-action: pan-x; */
+}
+
+.modal-login::-webkit-scrollbar {
+  display: none;
+}
+
+.order-btn:hover .order-text {
+  text-decoration: underline;
+}
+
+/* Profile Navbar */
+/* .profile-navbar {
+  background-color: white;
+}
+
+@media (max-width: 992px) {
+  .profile-navbar {
+    position: absolute;
+    top: 160px;
+    width: 250px !important;
+  }
+} */
+
+@media (max-width: 768px) {
+  .profile-navbar {
+    width: 59.33px !important;
+  }
+}
+
+.search-bar {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .search-bar {
+    position: fixed;
+    top: 83px;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #3ab54aff;
+  }
+
+  /* ************* */
+  .header-navbar {
+    padding-top: 60px !important;
+  }
+}
+
+.searchResults li {
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.searchResults li:last-child {
+  border: none !important;
+}
+
+.searchResults li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
