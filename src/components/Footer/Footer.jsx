@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="bg-success mt-5 py-5 text-white">
         <Container>
           <Row>
-            <Col>
+            <Col className="col-12 col-md-6">
               <h2 className="fw-bold text-white">All Shop</h2>
               <p style={{ maxWidth: "400px" }} className="fw-light">
                 loremasd asdkfao asfoaijdoiawd asoidoijadno asdoi aos doiasod
