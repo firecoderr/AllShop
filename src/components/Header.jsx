@@ -15,6 +15,7 @@ import {
   Alert,
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import logo from "/public/logo.jpg";
 
 export default function Header({
   links,
@@ -327,7 +328,7 @@ export default function Header({
                 }}
                 className="d-flex align-items-center fs-4 fw-bold text-dark"
               >
-                <Image src="logo.jpg" height="40" />
+                <Image src={logo} height="40" />
                 AllShop
               </Navbar.Brand>
 
