@@ -319,8 +319,9 @@ export default function Header({
           <Row className="w-100 row-cols-1">
             <Col className="d-flex justify-content-between align-items-center">
               <Navbar.Brand
-                href="/"
+                // href="/"
                 onClick={() => {
+                  navigate("/");
                   setProducts([]);
                   window.scrollTo(0, 0);
                 }}
