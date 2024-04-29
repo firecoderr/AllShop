@@ -120,7 +120,7 @@ function About({
           />
         ) : (
           <Row
-            key={crypto.randomUUID()}
+            key={`filter-row-${crypto.randomUUID()}`}
             lg={4}
             md={3}
             sm={2}

@@ -247,6 +247,11 @@ export default function Header({
                 Don't have an account?{" "}
                 <a
                   // href="#signup"
+                  style={{
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                    color: "blue",
+                  }}
                   onClick={() => setSwitchLogin((prev) => !prev)}
                 >
                   Sign here
@@ -296,7 +301,14 @@ export default function Header({
             <Modal.Footer className="py-4">
               <p className="text-center w-100">
                 Already have an account?{" "}
-                <a onClick={() => setSwitchLogin((prev) => !prev)}>
+                <a
+                  onClick={() => setSwitchLogin((prev) => !prev)}
+                  style={{
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                    color: "blue",
+                  }}
+                >
                   Login here
                 </a>
               </p>
@@ -320,6 +332,7 @@ export default function Header({
           <Row className="w-100 row-cols-1">
             <Col className="d-flex justify-content-between align-items-center">
               <Navbar.Brand
+                style={{ cursor: "pointer" }}
                 // href="/"
                 onClick={() => {
                   navigate("/");

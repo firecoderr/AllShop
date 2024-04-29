@@ -435,7 +435,7 @@ export default function Profile({
                         {order.products?.map((ord, index) => {
                           return (
                             <>
-                              <tr key={"order" + crypto.randomUUID()}>
+                              <tr key={"order-" + crypto.randomUUID()}>
                                 <td>{index + 1}</td>
                                 <td>
                                   <Image
