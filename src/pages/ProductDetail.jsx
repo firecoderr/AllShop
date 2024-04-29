@@ -134,10 +134,10 @@ export default function ProductDetail({
   localStorage.setItem("RECENTLY", JSON.stringify(recent));
 
   // Recently Seen
-  const recently = recent.filter((f) => f.id !== detail.id).reverse();
+  const recently = recent.filter((f) => f.id !== detail?.id).reverse();
 
   const addToRecent = (product) => {
-    !recent.some((r) => r.id === product.id) &&
+    !recent.some((r) => r?.id === product?.id) &&
       setRecent((prev) => [...prev, product]);
   };
 

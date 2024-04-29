@@ -246,7 +246,7 @@ export default function Header({
               <p className="text-center w-100">
                 Don't have an account?{" "}
                 <a
-                  href="#signup"
+                  // href="#signup"
                   onClick={() => setSwitchLogin((prev) => !prev)}
                 >
                   Sign here
@@ -294,11 +294,11 @@ export default function Header({
               </Form>
             </Modal.Body>
             <Modal.Footer className="py-4">
-              <p
-                onClick={() => setSwitchLogin((prev) => !prev)}
-                className="text-center w-100"
-              >
-                Already have an account? <a href="#login">Login here</a>
+              <p className="text-center w-100">
+                Already have an account?{" "}
+                <a onClick={() => setSwitchLogin((prev) => !prev)}>
+                  Login here
+                </a>
               </p>
             </Modal.Footer>
           </>
@@ -323,7 +323,7 @@ export default function Header({
                 // href="/"
                 onClick={() => {
                   navigate("/");
-                  setProducts([]);
+                  // setProducts([]);
                   window.scrollTo(0, 0);
                 }}
                 className="d-flex align-items-center fs-4 fw-bold text-dark"

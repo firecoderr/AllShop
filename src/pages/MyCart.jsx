@@ -111,7 +111,7 @@ export default function MyCart({
           }, 2000);
           return {
             ...user,
-            orders: [{ products: myCart, time: date }],
+            orders: [...user.orders, { products: myCart, time: date }],
           };
         } else {
           return { ...user, orders: [] };
