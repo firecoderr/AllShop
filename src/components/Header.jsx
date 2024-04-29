@@ -326,7 +326,7 @@ export default function Header({
                 }}
                 className="d-flex align-items-center fs-4 fw-bold text-dark"
               >
-                <Image src="../public/logo.jpg" height="40" />
+                <Image src="logo.jpg" height="40" />
                 AllShop
               </Navbar.Brand>
 
